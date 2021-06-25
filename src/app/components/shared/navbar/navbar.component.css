@@ -9,6 +9,12 @@
 }
 
 nav.navbar {
-    background-color: rgb(13, 0, 128);
+    background-color: #2e51a2;
 
+}
+.logo{
+    height: 36px;
+}
+.logo-col{
+    padding: 10px;
 }
