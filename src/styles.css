@@ -1,8 +1,7 @@
 /* You can add global styles to this file, and also import other style files */
 
 body {
-    background-color: #1C2833;
-    color: white;
+    background-color:white;
 }
 
 .card-title {
@@ -11,16 +10,4 @@ body {
 
 .card-text {
     color: black;
-}
-
-.navbar-brand {
-    font-size: 30px;
-}
-
-.nav-link {
-    font-size: 20px;
-}
-
-.navbar {
-    background-color: #1B2631;
 }

@@ -8,14 +8,13 @@ import { APP_ROUTING } from './app.routes';
 import { NavbarComponent } from './components/shared/navbar/navbar.component';
 import { AnimeComponent } from './components/pages/anime/anime.component';
 import { HttpClientModule } from '@angular/common/http';
-
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     NavbarComponent,
-    AnimeComponent
-  ],
+    AnimeComponent,
+    ],
   imports: [
     BrowserModule,
     APP_ROUTING,
