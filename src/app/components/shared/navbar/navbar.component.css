@@ -10,11 +10,13 @@
 
 nav.navbar {
     background-color: #2e51a2;
-
 }
 .logo{
     height: 36px;
 }
 .logo-col{
     padding: 10px;
+}
+.top{
+    padding-bottom: 0px;
 }
