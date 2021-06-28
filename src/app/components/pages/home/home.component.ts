@@ -22,10 +22,11 @@ export class HomeComponent implements OnInit {
   }
 
   animeTop(){
-    this.animeService.getAnimeTop()
+    this.animeService.getAnimeTopTv()
     .subscribe((resp:any) =>{
       this.array = resp.top;
     });
+    
   }
 
   mangaTop(){

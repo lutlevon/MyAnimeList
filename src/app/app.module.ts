@@ -8,11 +8,13 @@ import { APP_ROUTING } from './app.routes';
 import { NavbarComponent } from './components/shared/navbar/navbar.component';
 import { AnimeComponent } from './components/pages/anime/anime.component';
 import { HttpClientModule } from '@angular/common/http';
+import { FooterComponent } from './components/shared/footer/footer.component';
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     NavbarComponent,
+    FooterComponent,
     AnimeComponent,
     ],
   imports: [

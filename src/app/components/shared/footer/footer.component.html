@@ -1,1 +1,50 @@
-<p>footer works!</p>
+<div class="d-flex justify-content-center P1">
+    <div class="p-2 bd-highlight">Top Anime
+        <hr>
+        <div class="col" *ngFor="let anime of topAnimes| slice:0:5; let index = index">
+            {{index+1}} <a href="">{{anime.title}}</a> 
+        </div>
+    </div>
+    <div class="p-2 bd-highlight">Top Airing Anime
+        <hr>
+        <div class="col" *ngFor="let animeAiring of topAnimesAiring| slice:0:5; let index = index">
+            {{index+1}}  {{animeAiring.title}}
+        </div>
+    </div>
+    <div class="p-2 bd-highlight">Most Popular Characters
+        <hr>
+    </div>
+</div>
+<div class="P2">
+    <div class="row">
+        <div class="d-flex justify-content-center">
+            <div class="p-2 bd-highlight">
+                Follow us
+            </div>
+            <div class="p-2 bd-highlight ">
+                <img src="../assets/facebook.png">
+            </div>
+            <div class="p-2 bd-highlight">
+                <img src="../assets/twitter.png">
+            </div>
+            <div class="p-2 bd-highlight">
+                <img src="../assets/instagram.png">
+            </div>
+            <div class="p-2 bd-highlight">
+                <img src="../assets/discord.png">
+            </div>
+            <div class="p-2 bd-highlight">
+                Get the app
+            </div>
+            <div class="p-2 bd-highlight">
+                <img src="../assets/appstore.png">
+            </div>
+            <div class="p-2 bd-highlight">
+                <img src="../assets/playstore.png">
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        
+    </div>
+</div>
