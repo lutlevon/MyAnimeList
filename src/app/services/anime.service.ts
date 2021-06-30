@@ -18,4 +18,7 @@ export class AnimeService {
   getMangaTop(){
     return this.http.get(`${this.url}/top/manga/1/manga`);
   }
+  getCharactersTop(){
+    return this.http.get(`${this.url}/top/characters/1`);
+  }
 }

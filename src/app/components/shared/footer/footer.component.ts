@@ -11,6 +11,7 @@ export class FooterComponent implements OnInit {
 
   topAnimes:AnimeTopModel[]=[];
   topAnimesAiring:AnimeTopModel[]=[];
+  topCharacters:CharacterModel[]=[];
 
 
   constructor(private animeService:AnimeService) { }
@@ -18,6 +19,7 @@ export class FooterComponent implements OnInit {
   ngOnInit(): void {
     this.animeTopTv();
     this. animeTopAiring();
+    this.charactersTop();
   }
 
   animeTopTv(){
@@ -30,8 +32,14 @@ export class FooterComponent implements OnInit {
     this.animeService.getAnimeTopAiring()
     .subscribe((resp:any) =>{
       this.topAnimesAiring = resp.top;
-      console.log(this.animeTopAiring)
     });
+  }
+
+  charactersTop(){
+    this.animeService.getCharactersTop()
+    .subscribe((resp:any)=>{
+      this.topCharacters = resp.top;
+    })
   }
   
 
