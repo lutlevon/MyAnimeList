@@ -1,14 +1,24 @@
 <div class="d-flex justify-content-center P1">
-    <div class="p-2 bd-highlight">Top Anime
+    <div class="p-2 bd-highlight">
+        <div class="row">
+            <div class="d-flex justify-content-between">
+                <div class="d-flex p-1 bd-highlight">Top Animes</div>
+                <div class="d-flex p-1 bd-highlight"><a href="">More</a></div>
+            </div>
+        </div>
         <hr>
         <div class="col" *ngFor="let anime of topAnimes| slice:0:5; let index = index">
             {{index+1}} <a href="">{{anime.title}}</a> 
         </div>
     </div>
-    <div class="p-2 bd-highlight">Top Airing Anime
+    <div class="p-2 bd-highlight">
+        <div class="d-flex justify-content-between">
+            <div class="d-flex p-1 bd-highlight">Top Airing Animes</div>
+            <div class="d-flex p-1 bd-highlight"><a href="">More</a></div>
+        </div>
         <hr>
         <div class="col" *ngFor="let animeAiring of topAnimesAiring| slice:0:5; let index = index">
-            {{index+1}}  {{animeAiring.title}}
+            {{index+1}} <a href="">{{animeAiring.title}}</a> 
         </div>
     </div>
     <div class="p-2 bd-highlight">Most Popular Characters
@@ -16,10 +26,10 @@
     </div>
 </div>
 <div class="P2">
-    <div class="row">
+    <div class="row first-row">
         <div class="d-flex justify-content-center">
             <div class="p-2 bd-highlight">
-                Follow us
+                Follow Us
             </div>
             <div class="p-2 bd-highlight ">
                 <img src="../assets/facebook.png">
@@ -37,14 +47,45 @@
                 Get the app
             </div>
             <div class="p-2 bd-highlight">
-                <img src="../assets/appstore.png">
+                <img src="../assets/badge_iOS.png">
             </div>
             <div class="p-2 bd-highlight">
-                <img src="../assets/playstore.png">
+                <img src="../assets/badge_googleplay.png">
             </div>
         </div>
     </div>
-    <div class="row">
+    <hr class="footer-hr">
+    <div class="row second-row">
+        <div class="d-flex justify-content-center">
+            <div class="p-2 bd-highlight"><a class="a-white" href="">Home</a></div>
+            <div class="p-2 bd-highlight">|</div>
+            <div class="p-2 bd-highlight"><a class="a-white" href="">About</a></div>
+            <div class="p-2 bd-highlight"><a class="a-white" href="">Press Room</a></div>
+            <div class="p-2 bd-highlight"><a class="a-white" href="">Support</a></div>
+            <div class="p-2 bd-highlight"><a class="a-white" href="">Advertising</a></div>
+            <div class="p-2 bd-highlight"><a class="a-white" href="">FAQ</a></div>
+            <div class="p-2 bd-highlight"><a class="a-white" href="">Terms</a></div>
+            <div class="p-2 bd-highlight"><a class="a-white" href="">Privacy</a></div>
+            <div class="p-2 bd-highlight"><a class="a-white" href="">Cookie</a></div>
+            <div class="p-2 bd-highlight"><a class="a-white" href="">Notice at Collection</a></div>
+            <div class="p-2 bd-highlight"><a class="a-white" href="">Sitemap</a></div>
+            <div class="p-2 bd-highlight">|</div>
+            <div class="p-2 bd-highlight"><a class="a-white" href="">Login</a></div>
+            <div class="p-2 bd-highlight"><a class="a-white" href="">Sing Up</a></div>
+        </div>
+    </div>
+    <div class="row third-row">
+        <div class="d-flex justify-content-center">
+            <div class="p-2 bd-highlight"><a class="a-white" href="">Recommended</a></div>
+            <div class="p-2 bd-highlight"><a class="a-white" href="">Tokyo Otaku Mode</a></div>
+            <div class="p-2 bd-highlight"><a class="a-white" href="">Honey's Anime</a></div>
+            <div class="p-2 bd-highlight"><a class="a-white" href="">Manga Store</a></div>
+        </div>
+    </div>
+    <div class="row last-row">
+        <div class="d-flex justify-content-center">
+            <div class="p-2 bd-highlight">Pagina Realizada por el von</div>
+        </div>
         
     </div>
 </div>

@@ -3,8 +3,36 @@
 }
 .P2{
     background-color: #2e51a2;
-    color: white;
+    padding:32px 0 15px;
+    text-align: center;
 }
 a{
     text-decoration: none;
+}
+.a-white{
+    color: white;
+}
+.footer-hr{
+    height: 1px;
+    background-color: white;
+    width:50%;
+    margin-left: 25%;
+    scroll-margin-right: 25%;
+    align-items: center;
+}
+.third-row{
+    font-size: 11px;
+    color:#d8d8d8 ;
+    padding-top:15px;
+}
+.first-row{
+    color: #9caed9;
+}
+.second-row{
+    color: white;
+}
+.last-row{
+    color: white;
+    font-size: 10px;
+    padding: 0.5px;
 }
