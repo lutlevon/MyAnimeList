@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { AnimeService } from 'src/app/services/anime.service';
 import { AnimeTopModel } from '../models/AnimeTop.model';
+import { CharacterModel } from '../models/Character.Model';
 
 @Component({
   selector: 'app-footer',
@@ -20,21 +21,21 @@ export class FooterComponent implements OnInit {
     this.animeTopTv();
     this. animeTopAiring();
     this.charactersTop();
+
   }
 
   animeTopTv(){
-    this.animeService.getAnimeTopTv()
+    this.animeService.getAnimeTop("tv")
     .subscribe((resp:any) =>{
       this.topAnimes = resp.top;
     });
   }
   animeTopAiring(){
-    this.animeService.getAnimeTopAiring()
+    this.animeService.getAnimeTop("airing")
     .subscribe((resp:any) =>{
       this.topAnimesAiring = resp.top;
     });
   }
-
   charactersTop(){
     this.animeService.getCharactersTop()
     .subscribe((resp:any)=>{

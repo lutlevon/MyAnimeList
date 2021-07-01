@@ -22,7 +22,7 @@ export class HomeComponent implements OnInit {
   }
 
   animeTop(){
-    this.animeService.getAnimeTopTv()
+    this.animeService.getAnimeTop("tv")
     .subscribe((resp:any) =>{
       this.array = resp.top;
     });

@@ -1,4 +1,4 @@
-class CharacterModel{
+export class CharacterModel{
     mal_id:number;
     rank:number;
     title:String;

@@ -9,11 +9,14 @@ export class AnimeService {
   private url = 'https://api.jikan.moe/v3'; 
   constructor(private http : HttpClient) { }
 
-  getAnimeTopAiring(){
-    return this.http.get(`${this.url}/top/anime/1/airing`);
+  getAnimeTop(title:String){
+    return this.http.get(`${this.url}/top/anime/1/${title}`);
   }
-  getAnimeTopTv(){
-    return this.http.get(`${this.url}/top/anime/1/tv`);
+  getAnimeSeason(season:String,year:String){
+    return this.http.get(`${this.url}/season/${year}/${season}`);
+  }
+  getAnimeSchedule(){
+    return this.http.get(`${this.url}/schedule`)
   }
   getMangaTop(){
     return this.http.get(`${this.url}/top/manga/1/manga`);
