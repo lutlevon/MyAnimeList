@@ -11,10 +11,13 @@ import { MangaTopModel } from '../../shared/models/mangaTop.Model';
 })
 export class HomeComponent implements OnInit {
 
+  categoriaAnime:String;
   array:AnimeTopModel[] = [];
   Mangas : MangaTopModel[] = [];
   cont:number = 0;
-  constructor(private animeService : AnimeService) { }
+  constructor(private animeService : AnimeService) {
+    this.categoriaAnime = "tv";
+   }
 
   ngOnInit(): void {
     this.animeTop();
@@ -25,8 +28,8 @@ export class HomeComponent implements OnInit {
     this.animeService.getAnimeTop("tv")
     .subscribe((resp:any) =>{
       this.array = resp.top;
+      console.log(resp.top);
     });
-    
   }
 
   mangaTop(){

@@ -9,6 +9,7 @@ import { NavbarComponent } from './components/shared/navbar/navbar.component';
 import { AnimeComponent } from './components/pages/anime/anime.component';
 import { HttpClientModule } from '@angular/common/http';
 import { FooterComponent } from './components/shared/footer/footer.component';
+import { AnimecardComponent } from './components/shared/animecard/animecard.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -16,6 +17,7 @@ import { FooterComponent } from './components/shared/footer/footer.component';
     NavbarComponent,
     FooterComponent,
     AnimeComponent,
+    AnimecardComponent,
     ],
   imports: [
     BrowserModule,
