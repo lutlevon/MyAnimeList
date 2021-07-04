@@ -1,11 +1,11 @@
-<div class="d-flex justify-content-center align-items-start">
-    <h3 class="p-2 bd-highlight num">{{ n }}</h3>
-    <h3 class="p-2 bd-highlight"><img [src]="arrayPadre[0].image_url"></h3>
+<div class="d-flex justify-content-center align-items-start" *ngFor="let item of [].constructor(numeroTarjetas); let i = index">
+    <h3 class="p-2 bd-highlight num">{{ i }}</h3>
+    <h3 class="p-2 bd-highlight"><img [src]="arrayPadre[i].image_url"></h3>
     <h3 class="p-2 bd-highlight">
         <div class="d-flex flex-column align-items-start">
-            <div class=" bd-highlight"><a href="">{{ arrayPadre[0].title}}</a></div>
-            <div class=" bd-highlight txt">{{arrayPadre[0].type}} , {{arrayPadre[0].episodes}} eps, scored: {{arrayPadre[0].score}}</div>
-            <div class=" bd-highlight txt">{{arrayPadre[0].members}} members</div>
+            <div class=" bd-highlight"><a href="">{{ arrayPadre[i].title}}</a></div>
+            <div class=" bd-highlight txt">{{arrayPadre[i].type}} , {{arrayPadre[i].episodes}} eps, scored: {{arrayPadre[i].score}}</div>
+            <div class=" bd-highlight txt">{{arrayPadre[i].members}} members</div>
         </div>
     </h3>
     <h3 class=" bd-highlight"><a href="">add</a></h3>

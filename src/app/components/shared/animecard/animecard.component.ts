@@ -10,6 +10,7 @@ import { AnimeTopModel } from '../models/AnimeTop.model';
 export class AnimecardComponent implements OnInit {
 
   @Input() arrayPadre:AnimeTopModel;
+  @Input() numeroTarjetas:number;
 
   n:number = 0;
 

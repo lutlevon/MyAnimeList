@@ -1,48 +1,15 @@
 <div class="row">
-    <div class="col-6 flex justify-content-center">
-        <h1>Top Animes</h1>
-        <br>
-        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-inner">
-                <div class="carousel-item active" *ngFor="let valor of array | slice:0:10; let isFirst = first" [ngClass]="{active:isFirst}">
-                    <img [src]="valor.image_url" class="d-block w-100" [alt]="valor.title" height="550px">
-                    <h3>{{valor.title}}</h3>
-                </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-        </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-        </button>
-        </div>
+    <div class="col-8 flex justify-content-center">
+       
     </div>
-    <div class="col-6 flex justify-content-center">
-        <h1>Top Mangas</h1><br>
-        <div id="carouselMangas" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-inner">
-                <div class="carousel-item active" *ngFor="let valor of Mangas | slice:0:10; let isFirst2 = first" [ngClass]="{active:isFirst2}">
-                    <img [src]="valor.image_url" class="d-block w-100" [alt]="valor.title" height="550px">
-                    <h3>{{valor.title}}</h3>
-                </div>
+    <div class="col-4 flex justify-content-center">
+        <div *ngIf="array.length > 0" class="row">
+            <div class="col">
+                <app-animecard [arrayPadre]="array" [numeroTarjetas]="numeroTarjetas"></app-animecard>
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselMangas" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-        </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselMangas" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-        </button>
         </div>
     </div>
 </div>
 <br><br><br>
-<div *ngIf="array.length > 0" class="row">
-    <div class="col">
-        <app-animecard [arrayPadre]="array"></app-animecard>
-    </div>
-</div>
+
 <br><br><br>

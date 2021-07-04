@@ -6,13 +6,13 @@ import { MangaTopModel } from '../../shared/models/mangaTop.Model';
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
-  styles: [
-  ]
+  styleUrls: ['./home.component.css']
 })
 export class HomeComponent implements OnInit {
 
   categoriaAnime:String;
   array:AnimeTopModel[] = [];
+  numeroTarjetas:number = 5;
   Mangas : MangaTopModel[] = [];
   cont:number = 0;
   constructor(private animeService : AnimeService) {
