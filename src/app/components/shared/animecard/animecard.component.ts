@@ -16,6 +16,5 @@ export class AnimecardComponent implements OnInit {
   constructor(private animeService:AnimeService) { }
 
   ngOnInit(): void {
-    
   }
 }

@@ -40,7 +40,7 @@
     </div>
 </div>
 <br><br><br>
-<div class="row">
+<div *ngIf="array.length > 0" class="row">
     <div class="col">
         <app-animecard [arrayPadre]="array"></app-animecard>
     </div>

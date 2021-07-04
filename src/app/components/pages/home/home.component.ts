@@ -28,7 +28,6 @@ export class HomeComponent implements OnInit {
     this.animeService.getAnimeTop("tv")
     .subscribe((resp:any) =>{
       this.array = resp.top;
-      console.log(resp.top);
     });
   }
 
