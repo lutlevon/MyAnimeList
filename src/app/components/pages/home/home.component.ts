@@ -12,9 +12,12 @@ export class HomeComponent implements OnInit {
 
   categoriaAnime:String;
   array:AnimeTopModel[] = [];
+  topAiring:AnimeTopModel [] = [];
+  topUpcoming:AnimeTopModel [] = [];
   numeroTarjetas:number = 5;
   Mangas : MangaTopModel[] = [];
   cont:number = 0;
+
   constructor(private animeService : AnimeService) {
     this.categoriaAnime = "tv";
    }
@@ -22,12 +25,26 @@ export class HomeComponent implements OnInit {
   ngOnInit(): void {
     this.animeTop();
     this.mangaTop();
+    this.animeTopAiring();
   }
 
   animeTop(){
     this.animeService.getAnimeTop("tv")
     .subscribe((resp:any) =>{
       this.array = resp.top;
+    });
+  }
+
+  animeTopAiring(){
+    this.animeService.getAnimeTop("airing")
+    .subscribe((resp:any) =>{
+      this.topAiring = resp.top;
+    });
+  }
+  animeTopUpcoming(){
+    this.animeService.getAnimeTop("upcoming")
+    .subscribe((resp:any) =>{
+      this.topUpcoming = resp.top;
     });
   }
 

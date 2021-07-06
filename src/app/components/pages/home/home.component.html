@@ -3,13 +3,35 @@
        
     </div>
     <div class="col-4 flex justify-content-center">
-        <div *ngIf="array.length > 0" class="row">
-            <div class="col">
-                <app-animecard [arrayPadre]="array" [numeroTarjetas]="numeroTarjetas"></app-animecard>
+        <div class="row">
+            <div class="row">
+                Most Popular Anime
+            </div>
+            <div *ngIf="array.length > 0" class="row">
+                <div class="col">
+                    <app-animecard [arrayPadre]="array" [numeroTarjetas]="numeroTarjetas"></app-animecard>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="row">
+                Top Airing Anime
+            </div>
+            <div *ngIf="array.length > 0" class="row">
+                <div class="col">
+                    <app-animecard [arrayPadre]="topAiring" [numeroTarjetas]="numeroTarjetas"></app-animecard>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="row">
+                Top Upcoming Anime
+            </div>
+            <div *ngIf="array.length > 0" class="row">
+                <div class="col">
+                    <app-animecard [arrayPadre]="topUpcoming" [numeroTarjetas]="numeroTarjetas"></app-animecard>
+                </div>
             </div>
         </div>
     </div>
 </div>
-<br><br><br>
-
-<br><br><br>
