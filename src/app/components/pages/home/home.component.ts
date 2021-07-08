@@ -14,6 +14,7 @@ export class HomeComponent implements OnInit {
   array:AnimeTopModel[] = [];
   topAiring:AnimeTopModel [] = [];
   topUpcoming:AnimeTopModel [] = [];
+  
   numeroTarjetas:number = 5;
   Mangas : MangaTopModel[] = [];
   cont:number = 0;
@@ -27,6 +28,7 @@ export class HomeComponent implements OnInit {
     this.mangaTop();
     this.animeTopAiring();
     this.animeTopUpcoming();
+    this.animeNews();
   }
 
   animeTop(){
@@ -40,12 +42,20 @@ export class HomeComponent implements OnInit {
     this.animeService.getAnimeTop("airing")
     .subscribe((resp:any) =>{
       this.topAiring = resp.top;
+      console.log(resp);
     });
   }
   animeTopUpcoming(){
     this.animeService.getAnimeTop("upcoming")
     .subscribe((resp:any) =>{
       this.topUpcoming = resp.top;
+    });
+  }
+
+  animeNews(){
+    this.animeService.getAnimeReviews()
+    .subscribe((resp:any)=>{
+      console.log(resp);
     });
   }
 

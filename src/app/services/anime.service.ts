@@ -18,6 +18,9 @@ export class AnimeService {
   getAnimeSchedule(){
     return this.http.get(`${this.url}/schedule`)
   }
+  getAnimeReviews(){
+    return this.http.get(`${this.url}/anime/1/reviews`)
+  }
   getMangaTop(){
     return this.http.get(`${this.url}/top/manga/1/manga`);
   }
