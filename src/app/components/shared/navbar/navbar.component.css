@@ -1,62 +1,17 @@
-.navbar-brand {
-    font-size: 30px;
-    color: white;
-}
-
-.nav-link {
-    font-size: 20px;
-    color: white;
+.navbar{
+  padding: 0px;
+  background-color: #2e51a2;
+  text-align: center;
 }
 .nav-item{
-    text-align: center;
-    padding-right: 30px;
+  background-color: blueviolet;
+  margin: 0px;
 }
-nav.navbar {
-    background-color: #2e51a2;
+.input{
+  height: 25px;
+  margin-top: 0px;
 }
-.logo{
-    height: 36px;
+.btn-inp{
+  height: 25px;
+  margin-top: 0px;
 }
-.logo-col{
-    padding: 10px;
-}
-.top{
-    padding-bottom: 0px;
-}
-.dropbtn {
-    font-size: 20px;
-    color: white;
-  }
-  
-  /* The container <div> - needed to position the dropdown content */
-  .dropdown {
-    position: relative;
-    display: inline-block;
-  }
-  
-  /* Dropdown Content (Hidden by Default) */
-  .dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f1f1f1;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-  }
-  
-  /* Links inside the dropdown */
-  .dropdown-content a {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-  }
-
-/* Change color of dropdown links on hover */
-.dropdown-content a:hover {background-color: #fff;}
-
-/* Show the dropdown menu on hover */
-.dropdown:hover .dropdown-content {display: block;}
-
-/* Change the background color of the dropdown button when the dropdown content is shown */
-.dropdown:hover .dropbtn {background-color: #fff; color: black;}
