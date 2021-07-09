@@ -1,6 +1,6 @@
 <div class="row">
     <div class="col-8 flex justify-content-center">
-       
+  
     </div>
     <div class="col-4 flex justify-content-center">
         <div class="row">
@@ -17,7 +17,7 @@
             <div class="row">
                 Top Airing Anime
             </div>
-            <div *ngIf="array.length > 0" class="row">
+            <div *ngIf="topAiring.length > 0" class="row">
                 <div class="col">
                     <app-animecard [arrayPadre]="topAiring" [numeroTarjetas]="numeroTarjetas"></app-animecard>
                 </div>
@@ -27,7 +27,7 @@
             <div class="row">
                 Top Upcoming Anime
             </div>
-            <div *ngIf="array.length > 0" class="row">
+            <div *ngIf="topUpcoming.length > 0" class="row">
                 <div class="col">
                     <app-animecard [arrayPadre]="topUpcoming" [numeroTarjetas]="numeroTarjetas"></app-animecard>
                 </div>
