@@ -27,6 +27,7 @@ export class HomeComponent implements OnInit {
     this.animeTop();
     this.mangaTop();
     this.animeTopAiring();
+    this.animeTopUpcoming();
     this.animeNews();
   }
 
