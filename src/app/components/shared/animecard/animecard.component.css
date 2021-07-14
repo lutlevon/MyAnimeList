@@ -16,5 +16,8 @@ img{
 }
 .tit{
     color: #1d439b;
-    font-size: 12px;
+    font-weight: bold;
+}
+.card{
+    padding: 10px;
 }
