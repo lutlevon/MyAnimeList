@@ -1,11 +1,11 @@
 
-    <div class="row cardRow" *ngFor="let item of [].constructor(numeroTarjetas); let i = index">
-        <div class="col-1 num">{{ i }}</div>
-        <div class="imgCol col-2"><img [src]="arrayPadre[i].image_url"></div>
-        <div class="col-7">
-            <div class="row"><a class="tit" href="">{{ arrayPadre[i].title}}</a></div>
-            <div class=" row txt1">{{arrayPadre[i].type}} , {{arrayPadre[i].episodes}} eps, scored: {{arrayPadre[i].score}}</div>
-            <div class=" row txt2">{{arrayPadre[i].members}} members</div>
-        </div>
-        <h3 class="col-1"><a href="">add</a></h3>
+<div class="row cardRow" *ngFor="let item of [].constructor(numeroTarjetas); let i = index">
+    <div class="col-1 num">{{ i }}</div>
+    <div class="imgCol col-2"><img [src]="arrayPadre[i].image_url"></div>
+    <div class="col-7">
+        <div class="row"><a class="tit" href="">{{ arrayPadre[i].title}}</a></div>
+        <div class=" row txt1">{{arrayPadre[i].type}} , {{arrayPadre[i].episodes}} eps, scored: {{arrayPadre[i].score}}</div>
+        <div class=" row txt2">{{arrayPadre[i].members}} members</div>
     </div>
+    <h3 class="col-1"><a href="">add</a></h3>
+</div>
