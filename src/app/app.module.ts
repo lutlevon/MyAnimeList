@@ -10,6 +10,7 @@ import { AnimeComponent } from './components/pages/anime/anime.component';
 import { HttpClientModule } from '@angular/common/http';
 import { FooterComponent } from './components/shared/footer/footer.component';
 import { AnimecardComponent } from './components/shared/animecard/animecard.component';
+import { CarouselComponent } from './components/shared/carousel/carousel.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -18,6 +19,7 @@ import { AnimecardComponent } from './components/shared/animecard/animecard.comp
     FooterComponent,
     AnimeComponent,
     AnimecardComponent,
+    CarouselComponent,
     ],
   imports: [
     BrowserModule,
